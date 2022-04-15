@@ -29,4 +29,8 @@ class ApiManager {
     func getAccessToken() -> String?{
         UserDefaults.standard.string(forKey: SavedKeys.accessToken)
     }
+    
+    func removeAccessToken() {
+        UserDefaults.standard.removeObject(forKey: SavedKeys.accessToken)
+    }
 }

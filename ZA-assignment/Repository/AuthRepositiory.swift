@@ -32,6 +32,10 @@ class AuthRepository: NSObject {
     
     public let domain: String = "\(ApiManager.shared.baseUrl)oauth/"
     
+    var isLoggedIn: Bool {
+        return !(ApiManager.shared.getAccessToken()?.isEmpty ?? true)
+    }
+    
     // MARK: - Private
     private var authSession: ASWebAuthenticationSession!
     private var isAuthorizing: Bool = false
@@ -68,7 +72,7 @@ class AuthRepository: NSObject {
         isAuthorizing = true
     }
     
-    func token(code: String, completionHandler: @escaping (Bool)->Void) {
+    func token(code: String, completionHandler: @escaping (Bool, ErrorType?)->Void) {
         let params = [
                     "client_id" : SavedKeys.accessKey,
                     "client_secret": SavedKeys.secretKey,
@@ -76,9 +80,9 @@ class AuthRepository: NSObject {
                     "code": code,
                     "grant_type": AuthArguments.grandType,
                 ]
-        ApiRequest.shared.request(path: "oauth/token", queryParams: params) { data, err in
+        ApiRequest.shared.request(path: "oauth/token", method: .POST, queryParams: params) { data, errType, err in
             guard let data = data else {
-                completionHandler(false)
+                completionHandler(false, errType)
                 return
             }
            
@@ -86,19 +90,21 @@ class AuthRepository: NSObject {
                 let jsonDecoder = JSONDecoder()
                 let authModel = try jsonDecoder.decode(AuthModel.self, from: data)
                 guard let accessToken = authModel.accessToken else {
-                    completionHandler(false)
+                    completionHandler(false, errType)
                     return
                 }
                 ApiManager.shared.setAccessToken(accessToken)
-                completionHandler(true)
+                completionHandler(true, errType)
             } catch let parsingError {
                 print("Error: \(parsingError)")
-                completionHandler(false)
+                completionHandler(false, errType)
             }
         }
     }
     
-    
+    func logOut() {
+        ApiManager.shared.removeAccessToken()
+    }
     
 }
 // MARK: - ASWebAuthenticationPresentationContextProviding

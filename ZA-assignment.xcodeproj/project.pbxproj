@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		DB843C05280979AF00D98FE7 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C04280979AF00D98FE7 /* AuthModel.swift */; };
 		DB843C0728097CEE00D98FE7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C0628097CEE00D98FE7 /* ApiManager.swift */; };
+		DB843C0B28099E8100D98FE7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C0A28099E8100D98FE7 /* LoginViewModel.swift */; };
+		DB843C0E2809A0E300D98FE7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C0D2809A0E300D98FE7 /* UIViewControllerExtension.swift */; };
+		DB843C102809A12700D98FE7 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C0F2809A12700D98FE7 /* ErrorModel.swift */; };
+		DB843C132809A54100D98FE7 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C112809A54100D98FE7 /* ListViewController.swift */; };
+		DB843C142809A54100D98FE7 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB843C122809A54100D98FE7 /* ListViewController.xib */; };
+		DB843C162809A85F00D98FE7 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C152809A85F00D98FE7 /* ListViewModel.swift */; };
 		DBAF26D4280862C0006F3F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D3280862C0006F3F24 /* AppDelegate.swift */; };
 		DBAF26D6280862C0006F3F24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */; };
-		DBAF26D8280862C0006F3F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D7280862C0006F3F24 /* ViewController.swift */; };
+		DBAF26D8280862C0006F3F24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D7280862C0006F3F24 /* LoginViewController.swift */; };
 		DBAF26DB280862C0006F3F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26D9280862C0006F3F24 /* Main.storyboard */; };
 		DBAF26DD280862C2006F3F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26DC280862C2006F3F24 /* Assets.xcassets */; };
 		DBAF26E0280862C2006F3F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26DE280862C2006F3F24 /* LaunchScreen.storyboard */; };
@@ -25,10 +31,16 @@
 /* Begin PBXFileReference section */
 		DB843C04280979AF00D98FE7 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		DB843C0628097CEE00D98FE7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		DB843C0A28099E8100D98FE7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DB843C0D2809A0E300D98FE7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DB843C0F2809A12700D98FE7 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		DB843C112809A54100D98FE7 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DB843C122809A54100D98FE7 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		DB843C152809A85F00D98FE7 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		DBAF26D0280862C0006F3F24 /* ZA-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZA-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAF26D3280862C0006F3F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBAF26D7280862C0006F3F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBAF26D7280862C0006F3F24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBAF26DA280862C0006F3F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBAF26DC280862C2006F3F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAF26DF280862C2006F3F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +63,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB843C0828099D7E00D98FE7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF26D7280862C0006F3F24 /* LoginViewController.swift */,
+				DB843C112809A54100D98FE7 /* ListViewController.swift */,
+				DB843C122809A54100D98FE7 /* ListViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB843C0928099E7400D98FE7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB843C0A28099E8100D98FE7 /* LoginViewModel.swift */,
+				DB843C152809A85F00D98FE7 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB843C0C2809A0CC00D98FE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB843C0D2809A0E300D98FE7 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DBAF26C7280862C0006F3F24 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +109,14 @@
 		DBAF26D2280862C0006F3F24 /* ZA-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				DB843C0C2809A0CC00D98FE7 /* Extensions */,
+				DB843C0928099E7400D98FE7 /* ViewModel */,
+				DB843C0828099D7E00D98FE7 /* UI */,
 				DBAF26F128087654006F3F24 /* Repository */,
 				DBAF26EE280870B4006F3F24 /* Model */,
 				DBAF26E72808699D006F3F24 /* Networking */,
 				DBAF26D3280862C0006F3F24 /* AppDelegate.swift */,
 				DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */,
-				DBAF26D7280862C0006F3F24 /* ViewController.swift */,
 				DBAF26D9280862C0006F3F24 /* Main.storyboard */,
 				DBAF26DC280862C2006F3F24 /* Assets.xcassets */,
 				DBAF26DE280862C2006F3F24 /* LaunchScreen.storyboard */,
@@ -100,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DB843C04280979AF00D98FE7 /* AuthModel.swift */,
+				DB843C0F2809A12700D98FE7 /* ErrorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +214,7 @@
 			files = (
 				DBAF26E0280862C2006F3F24 /* LaunchScreen.storyboard in Resources */,
 				DBAF26DD280862C2006F3F24 /* Assets.xcassets in Resources */,
+				DB843C142809A54100D98FE7 /* ListViewController.xib in Resources */,
 				DBAF26DB280862C0006F3F24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,12 +227,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAF26ED28086B9D006F3F24 /* NetworkManager.swift in Sources */,
-				DBAF26D8280862C0006F3F24 /* ViewController.swift in Sources */,
+				DBAF26D8280862C0006F3F24 /* LoginViewController.swift in Sources */,
+				DB843C0B28099E8100D98FE7 /* LoginViewModel.swift in Sources */,
 				DB843C0728097CEE00D98FE7 /* ApiManager.swift in Sources */,
 				DBAF26F0280871F4006F3F24 /* HTTPMethod.swift in Sources */,
+				DB843C162809A85F00D98FE7 /* ListViewModel.swift in Sources */,
+				DB843C102809A12700D98FE7 /* ErrorModel.swift in Sources */,
+				DB843C132809A54100D98FE7 /* ListViewController.swift in Sources */,
 				DBAF26F32808766A006F3F24 /* AuthRepositiory.swift in Sources */,
 				DBAF26EB28086B76006F3F24 /* HTTPResponseStatusCode.swift in Sources */,
 				DBAF26D4280862C0006F3F24 /* AppDelegate.swift in Sources */,
+				DB843C0E2809A0E300D98FE7 /* UIViewControllerExtension.swift in Sources */,
 				DBAF26E928086A89006F3F24 /* ApiRequest.swift in Sources */,
 				DBAF26D6280862C0006F3F24 /* SceneDelegate.swift in Sources */,
 				DB843C05280979AF00D98FE7 /* AuthModel.swift in Sources */,
