@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB843C05280979AF00D98FE7 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C04280979AF00D98FE7 /* AuthModel.swift */; };
+		DB843C0728097CEE00D98FE7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB843C0628097CEE00D98FE7 /* ApiManager.swift */; };
 		DBAF26D4280862C0006F3F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D3280862C0006F3F24 /* AppDelegate.swift */; };
 		DBAF26D6280862C0006F3F24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */; };
 		DBAF26D8280862C0006F3F24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26D7280862C0006F3F24 /* ViewController.swift */; };
 		DBAF26DB280862C0006F3F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26D9280862C0006F3F24 /* Main.storyboard */; };
 		DBAF26DD280862C2006F3F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26DC280862C2006F3F24 /* Assets.xcassets */; };
 		DBAF26E0280862C2006F3F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAF26DE280862C2006F3F24 /* LaunchScreen.storyboard */; };
+		DBAF26E928086A89006F3F24 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26E828086A89006F3F24 /* ApiRequest.swift */; };
+		DBAF26EB28086B76006F3F24 /* HTTPResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26EA28086B76006F3F24 /* HTTPResponseStatusCode.swift */; };
+		DBAF26ED28086B9D006F3F24 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26EC28086B9D006F3F24 /* NetworkManager.swift */; };
+		DBAF26F0280871F4006F3F24 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26EF280871F4006F3F24 /* HTTPMethod.swift */; };
+		DBAF26F32808766A006F3F24 /* AuthRepositiory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAF26F22808766A006F3F24 /* AuthRepositiory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB843C04280979AF00D98FE7 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		DB843C0628097CEE00D98FE7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		DBAF26D0280862C0006F3F24 /* ZA-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZA-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAF26D3280862C0006F3F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		DBAF26DC280862C2006F3F24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBAF26DF280862C2006F3F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBAF26E1280862C2006F3F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBAF26E828086A89006F3F24 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		DBAF26EA28086B76006F3F24 /* HTTPResponseStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseStatusCode.swift; sourceTree = "<group>"; };
+		DBAF26EC28086B9D006F3F24 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DBAF26EF280871F4006F3F24 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DBAF26F22808766A006F3F24 /* AuthRepositiory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositiory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		DBAF26D2280862C0006F3F24 /* ZA-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				DBAF26F128087654006F3F24 /* Repository */,
+				DBAF26EE280870B4006F3F24 /* Model */,
+				DBAF26E72808699D006F3F24 /* Networking */,
 				DBAF26D3280862C0006F3F24 /* AppDelegate.swift */,
 				DBAF26D5280862C0006F3F24 /* SceneDelegate.swift */,
 				DBAF26D7280862C0006F3F24 /* ViewController.swift */,
@@ -65,6 +82,34 @@
 				DBAF26E1280862C2006F3F24 /* Info.plist */,
 			);
 			path = "ZA-assignment";
+			sourceTree = "<group>";
+		};
+		DBAF26E72808699D006F3F24 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF26E828086A89006F3F24 /* ApiRequest.swift */,
+				DBAF26EA28086B76006F3F24 /* HTTPResponseStatusCode.swift */,
+				DBAF26EF280871F4006F3F24 /* HTTPMethod.swift */,
+				DBAF26EC28086B9D006F3F24 /* NetworkManager.swift */,
+				DB843C0628097CEE00D98FE7 /* ApiManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DBAF26EE280870B4006F3F24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB843C04280979AF00D98FE7 /* AuthModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBAF26F128087654006F3F24 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DBAF26F22808766A006F3F24 /* AuthRepositiory.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAF26ED28086B9D006F3F24 /* NetworkManager.swift in Sources */,
 				DBAF26D8280862C0006F3F24 /* ViewController.swift in Sources */,
+				DB843C0728097CEE00D98FE7 /* ApiManager.swift in Sources */,
+				DBAF26F0280871F4006F3F24 /* HTTPMethod.swift in Sources */,
+				DBAF26F32808766A006F3F24 /* AuthRepositiory.swift in Sources */,
+				DBAF26EB28086B76006F3F24 /* HTTPResponseStatusCode.swift in Sources */,
 				DBAF26D4280862C0006F3F24 /* AppDelegate.swift in Sources */,
+				DBAF26E928086A89006F3F24 /* ApiRequest.swift in Sources */,
 				DBAF26D6280862C0006F3F24 /* SceneDelegate.swift in Sources */,
+				DB843C05280979AF00D98FE7 /* AuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

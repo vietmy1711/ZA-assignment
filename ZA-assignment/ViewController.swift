@@ -14,6 +14,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onLoginClicked(_ sender: UIButton) {
+        AuthRepository.shared.authorize { [weak self] code in
+            AuthRepository.shared.token(code: code) { success in
+                if (success) {
+                    print("logged")
+                } else {
+                    print("fail")
+                }
+            }
+        }
+    }
+    
 }
 
