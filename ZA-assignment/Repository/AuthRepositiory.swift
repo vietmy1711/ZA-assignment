@@ -8,12 +8,6 @@
 import Foundation
 import AuthenticationServices
 
-extension URL {
-    func valueOf(_ queryParameterName: String) -> String? {
-        guard let url = URLComponents(string: self.absoluteString) else { return nil }
-        return url.queryItems?.first(where: { $0.name == queryParameterName })?.value
-    }
-}
 
 class URLScheme{
     public static let scheme: String = "mynguyen"
@@ -30,7 +24,7 @@ class AuthRepository: NSObject {
     
     static let shared = AuthRepository()
     
-    public let domain: String = "\(ApiManager.shared.baseUrl)oauth/"
+    public let domain: String = "https://unsplash.com/oauth/"
     
     var isLoggedIn: Bool {
         return !(ApiManager.shared.getAccessToken()?.isEmpty ?? true)
@@ -48,7 +42,7 @@ class AuthRepository: NSObject {
             URLQueryItem(name: "scope", value: AuthArguments.scope),
         ]
         
-        var urlComponents = URLComponents(string: domain + "authorize")!
+        var urlComponents = URLComponents(string:  "\(domain)authorize")!
         urlComponents.queryItems = params
         // Cancel if authorizing
         if isAuthorizing { return }
@@ -80,7 +74,7 @@ class AuthRepository: NSObject {
                     "code": code,
                     "grant_type": AuthArguments.grandType,
                 ]
-        ApiRequest.shared.request(path: "oauth/token", method: .POST, queryParams: params) { data, errType, err in
+        ApiRequest.shared.request(with: "\(domain)token", method: .POST, queryParams: params) { data, errType, err in
             guard let data = data else {
                 completionHandler(false, errType)
                 return

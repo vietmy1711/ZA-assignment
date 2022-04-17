@@ -8,4 +8,5 @@
 enum HTTPMethod: String {
     case POST = "POST"
     case GET = "GET"
+    case DELETE = "DELETE"
 }

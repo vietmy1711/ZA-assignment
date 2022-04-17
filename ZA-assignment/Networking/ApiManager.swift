@@ -20,13 +20,13 @@ class SavedKeys{
 class ApiManager {
     public static let shared = ApiManager()
     
-    let baseUrl = "https://unsplash.com/"
+    let baseUrl = "https://api.unsplash.com/"
     
     func setAccessToken(_ accessToken: String) {
         UserDefaults.standard.set(accessToken, forKey: SavedKeys.accessToken)
     }
     
-    func getAccessToken() -> String?{
+    func getAccessToken() -> String? {
         UserDefaults.standard.string(forKey: SavedKeys.accessToken)
     }
     

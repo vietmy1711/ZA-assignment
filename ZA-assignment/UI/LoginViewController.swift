@@ -30,7 +30,9 @@ extension LoginViewController: LoginDelegate {
     }
     
     func didLoginFailed(error: ErrorType) {
-        showErrorMessage(error)
+        DispatchQueue.main.async { [weak self] in
+            self?.showErrorMessage(error)
+        }
     }
     
     
