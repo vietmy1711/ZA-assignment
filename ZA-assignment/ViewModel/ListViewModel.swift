@@ -35,7 +35,9 @@ class ListViewModel {
     func getPhotos(forceRefresh: Bool = false) {
         if (forceRefresh) {
             page = 0
+            isFetching = false
             hasReachedMax = false
+            photoModels.removeAll()
             AppCache.shared.empty()
         }
         guard !hasReachedMax, !isFetching else { return }
